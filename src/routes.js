@@ -89,14 +89,13 @@ export const MarksPage ={
     name:'Mark',
     to: '/mark',
     icon:'copy',
-    children: [
-        {
-            to: '/errors',
-            name: 'Errors',
-            children: [{ to: '/errors/404', name: '404' }, { to: '/errors/500', name: '500' }]
-        }
-    ]
 
+};
+export const widgetsRoutes = {
+  name: 'Widgets',
+  to: '/widgets',
+  exact: true,
+  icon: 'poll'
 };
 /*
 export const pageRoutes = {
@@ -128,12 +127,7 @@ export const pageRoutes = {
     }
   ]
 };*/
-export const widgetsRoutes = {
-  name: 'Widgets',
-  to: '/widgets',
-  exact: true,
-  icon: 'poll'
-};
+
 /*
 export const calenderRoutes = {
   name: 'Calendar',
@@ -331,7 +325,7 @@ export const utilityRoutes = {
 
 export default [
   homeRoutes,
-//   MarksPage,
+  MarksPage,
   //pageRoutes,
   //chatRoutes,
   //kanbanRoutes,
