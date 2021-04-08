@@ -3,18 +3,18 @@ import PropTypes from 'prop-types';
 import NavbarDropdown from './NavbarDropdown';
 import NavbarDropdownComponents from './NavbarDropdownComponents';
 import {
-  authenticationRoutes,
-  chatRoutes,
+  //authenticationRoutes,
+  //chatRoutes,
   componentRoutes,
-  ECommerceRoutes,
-  emailRoutes,
+  //ECommerceRoutes,
+  //emailRoutes,
   homeRoutes,
-  pageRoutes,
+  //pageRoutes,
   pluginRoutes,
   utilityRoutes,
   widgetsRoutes,
-  kanbanRoutes,
-  calenderRoutes
+  //kanbanRoutes,
+  //calenderRoutes
 } from '../../routes';
 import { NavItem } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
@@ -27,7 +27,7 @@ const NavbarTopDropDownMenus = ({ setNavbarCollapsed, setShowBurgerMenu }) => {
 
   const components = [componentRoutes, pluginRoutes, utilityRoutes];
 
-  const pages = [pageRoutes, calenderRoutes, kanbanRoutes, widgetsRoutes, chatRoutes, emailRoutes, ECommerceRoutes];
+  const pages = [widgetsRoutes];
 
   const handleSetNavbarCollapsed = () => {
     const windowWidth = window.innerWidth;
@@ -42,17 +42,17 @@ const NavbarTopDropDownMenus = ({ setNavbarCollapsed, setShowBurgerMenu }) => {
         items={homeRoutes.children}
         handleSetNavbarCollapsed={handleSetNavbarCollapsed}
       />
-      <NavbarDropdown title={pageRoutes.name} items={pages} handleSetNavbarCollapsed={handleSetNavbarCollapsed} />
+      
       <NavbarDropdownComponents
         title={componentRoutes.name}
         items={components}
         handleSetNavbarCollapsed={handleSetNavbarCollapsed}
       />
-      <NavbarDropdown
-        title={authenticationRoutes.name}
-        items={authenticationRoutes.children}
-        handleSetNavbarCollapsed={handleSetNavbarCollapsed}
-      />
+       
+         
+         
+        
+       
 
       {isTopNav && !isLanding && (
         <NavItem onClick={handleSetNavbarCollapsed}>
