@@ -84,7 +84,21 @@ export const ECommerceRoutes = {
     { to: '/e-commerce/favourite-items', name: 'Favourite items' }
   ]
 };
+*/
+export const MarksPage ={
+    name:'Mark',
+    to: '/mark',
+    icon:'copy',
+    children: [
+        {
+            to: '/errors',
+            name: 'Errors',
+            children: [{ to: '/errors/404', name: '404' }, { to: '/errors/500', name: '500' }]
+        }
+    ]
 
+};
+/*
 export const pageRoutes = {
   name: 'Pages',
   to: '/pages',
@@ -317,6 +331,7 @@ export const utilityRoutes = {
 
 export default [
   homeRoutes,
+//   MarksPage,
   //pageRoutes,
   //chatRoutes,
   //kanbanRoutes,
