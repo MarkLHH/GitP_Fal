@@ -13,10 +13,10 @@ export const homeRoutes = {
     },
     { to: '/dashboard-alt', name: 'Dashboard alt' },
     { to: '/feed', name: 'Feed', exact: true },
-    { to: '/landing', name: 'Landing' }
+    /*{ to: '/landing', name: 'Landing' }*/
   ]
 };
-
+/*
 export const authenticationRoutes = {
   name: 'Authentication',
   to: '/authentication',
@@ -113,14 +113,14 @@ export const pageRoutes = {
       children: [{ to: '/errors/404', name: '404' }, { to: '/errors/500', name: '500' }]
     }
   ]
-};
+};*/
 export const widgetsRoutes = {
   name: 'Widgets',
   to: '/widgets',
   exact: true,
   icon: 'poll'
 };
-
+/*
 export const calenderRoutes = {
   name: 'Calendar',
   to: '/calendar',
@@ -151,7 +151,7 @@ export const emailRoutes = {
     { to: '/email/email-detail', name: 'Email detail' },
     { to: '/email/compose', name: 'Compose' }
   ]
-};
+};*/
 
 export const documentationRoutes = {
   name: 'Documentation',
@@ -317,13 +317,13 @@ export const utilityRoutes = {
 
 export default [
   homeRoutes,
-  pageRoutes,
-  chatRoutes,
-  kanbanRoutes,
-  calenderRoutes,
-  emailRoutes,
-  authenticationRoutes,
-  ECommerceRoutes,
+  //pageRoutes,
+  //chatRoutes,
+  //kanbanRoutes,
+  //calenderRoutes,
+  //emailRoutes,
+  //authenticationRoutes,
+  //ECommerceRoutes,
   widgetsRoutes,
   componentRoutes,
   utilityRoutes,
