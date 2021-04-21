@@ -8,6 +8,7 @@ import TotalSales from '../../dashboard-alt/TotalSales'; // Need to have a copy 
 
 // Data
 import weeklySales from '../../../data/dashboard/weeklySales';
+import totalOrder from '../../../data/dashboard/totalOrder'
 import totalSales from '../../../data/dashboard/totalSales';
 
 const sectionOne = () => {
