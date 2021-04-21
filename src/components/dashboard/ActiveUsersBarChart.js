@@ -55,7 +55,8 @@ class ActiveUsersBarChart extends Component {
 
   simulateActiveUsers = () => {
     this.refreshInterval = setInterval(() => {
-      const currentActiveUser = Math.floor(Math.random() * (120 - 60) + 60);
+    //   const currentActiveUser = Math.floor(Math.random() * (120 - 60) + 60);
+      const currentActiveUser = 12;
       const activeUserHistory = [...this.state.activeUserHistory];
       activeUserHistory.shift();
       if (this._isMounted) {

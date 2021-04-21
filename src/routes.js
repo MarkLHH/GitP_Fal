@@ -84,7 +84,20 @@ export const ECommerceRoutes = {
     { to: '/e-commerce/favourite-items', name: 'Favourite items' }
   ]
 };
+*/
+export const MarksPage ={
+    name:'Mark',
+    to: '/mark',
+    icon:'copy',
 
+};
+export const widgetsRoutes = {
+  name: 'Widgets',
+  to: '/widgets',
+  exact: true,
+  icon: 'poll'
+};
+/*
 export const pageRoutes = {
   name: 'Pages',
   to: '/pages',
@@ -114,12 +127,7 @@ export const pageRoutes = {
     }
   ]
 };*/
-export const widgetsRoutes = {
-  name: 'Widgets',
-  to: '/widgets',
-  exact: true,
-  icon: 'poll'
-};
+
 /*
 export const calenderRoutes = {
   name: 'Calendar',
@@ -317,6 +325,7 @@ export const utilityRoutes = {
 
 export default [
   homeRoutes,
+  MarksPage,
   //pageRoutes,
   //chatRoutes,
   //kanbanRoutes,

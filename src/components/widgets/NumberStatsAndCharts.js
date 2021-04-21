@@ -29,10 +29,10 @@ const NumberStatsAndCharts = () => (
     />
     <div className="card-deck">
       <CardSummary rate="-0.23%" title="Customers" color="warning" linkText="See all">
-        58.39k
+        87.87k
       </CardSummary>
       <CardSummary rate="0.0%" title="Orders" color="info" linkText="All orders">
-        73.46k
+        4.20k
       </CardSummary>
       <CardSummary content="43,594" rate="9.54%" title="Revenue" color="success" linkText="Statistics">
         <CountUp end={43594} duration={5} prefix="$" separator="," decimal="." />
